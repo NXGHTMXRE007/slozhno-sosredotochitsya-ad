@@ -4,37 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Исправление 2: Мета-тег цветовой схемы -->
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    
+    <!-- Исправление 1: Правильный порядок (сначала шрифты, потом стили) -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <!-- Сюда добавь заголовок <h1> и другие элементы хедера из макета -->
     </header>
+
+    <!-- Исправление 5: Добавлены семантические теги main и section -->
+    <main>
+      <section class="content-section">
+        <!-- Сюда перенеси основной контент (статьи, текст) -->
+      </section>
+    </main>
+
+    <!-- Исправление 5: Добавлен тег footer -->
+    <footer class="footer decorated-zone">
+      <!-- Сюда добавь содержимое подвала -->
+    </footer>
   </body>
 </html>
